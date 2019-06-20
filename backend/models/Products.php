@@ -68,4 +68,8 @@ class Products extends \yii\db\ActiveRecord
         $data = Products::find()->asArray()->where('type=:catid', ['catid'=>$idCat])->all();
         return $data;
     }
+
+    public function getProductAll(){
+        return Products::find()->all();
+    }
 }
