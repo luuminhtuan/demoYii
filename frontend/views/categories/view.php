@@ -199,7 +199,7 @@ use yii\helpers\Html;
 					<div class="col-md-4 col-xs-6">
 						<div class="product">
 							<div class="product-img">
-								<img src="<?php echo $item['image'] ?>" alt="">
+								<img src="<?php echo Yii::$app->request->baseUrl.'/uploads/'. $item['image'] ?>" alt="">
 								<!-- <div class="product-label">
 									<span class="sale">-30%</span>
 									<span class="new">NEW</span>
